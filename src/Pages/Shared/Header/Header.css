@@ -1,0 +1,20 @@
+#headerOfNav {
+    margin-bottom: 90px;
+}
+
+.Navber-Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbarScrollingDropdown{
+    text-align: center;
+}
+/* 
+.HomeSection {
+    text-decoration: none;
+}
+
+.ClassSection {
+    text-decoration: none;
+} */

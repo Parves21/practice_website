@@ -1,0 +1,10 @@
+#LoginPage{
+    border: 1px solid #3be0ac;
+    border-radius: 5px;
+    padding: 20px;
+}
+#password-eye{
+    position: relative;
+    left: 300px;
+    bottom: 32px;
+}
