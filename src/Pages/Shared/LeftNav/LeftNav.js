@@ -2,11 +2,29 @@
 
 import * as React from 'react';
 import './LeftNav.css';
+import { Link } from 'react-router-dom';
 
 function LeftNav() {
+
+    const [ApiDatas, setApiDatas] = React.useState([]);
+
+
+    React.useEffect( () =>{
+        fetch('http://localhost:4000/apiData')
+        .then(res => res.json())
+        .then(data => setApiDatas(data))
+    } ,[])
+
     return (
         <div id='LeftNav' className='App'>
-            <h3>This is left nav</h3>
+            <h3>All Department</h3>
+            <div>
+                {
+                    ApiDatas.map(ApiData => <p>
+                        <Link className={ApiData.class} to={ApiData.url}>{ApiData.name}</Link>
+                    </p>)
+                }
+            </div>
         </div>
     );
 };

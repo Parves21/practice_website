@@ -14,7 +14,7 @@ function Main() {
             <Header></Header>
             <Container>
                 <Row>
-                    <Col lg="2"><LeftNav></LeftNav></Col>
+                    <Col  lg="2"><LeftNav></LeftNav></Col>
                     <Col lg="7"><Outlet></Outlet></Col>
                     <Col lg="3"><RightNav></RightNav></Col>
                 </Row>
