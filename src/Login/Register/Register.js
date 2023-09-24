@@ -3,7 +3,7 @@
 import * as React from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
-import { FaEye, FaUserSecret } from "react-icons/fa";
+import { FaUserSecret } from "react-icons/fa";
 import '../Login/Login.css';
 import { Link } from 'react-router-dom';
 
@@ -21,20 +21,15 @@ function Register() {
                         <Form.Label>Email</Form.Label>
                         <Form.Control type="email" placeholder="Enter email" required />
                         <Form.Text className="text-muted">
-                            <p className='text-success'>We'll never share your email with anyone else.</p>
+                            <p className='text-success'>We'll never share your Email.</p>
                         </Form.Text>
                     </Form.Group>
                     <Form.Group className="mb-1" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
                         <Form.Control type="password" placeholder="Password" required />
-                        <div id='password-eye'>
-                            <FaEye />
-                        </div>
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                        <div className='d-flex justify-content-between'>
-                            <Form.Check type="checkbox" label="Check me out" required />
-                            <Link className='text-success' to='/login'>Already have an Account</Link>
+                        <div className='d-flex justify-content-around'>
+                            <p className='text-success'>Already have an Account !!</p>
+                            <Link className='text-danger' to='/login'><small>SignIn</small></Link>
                         </div>
                     </Form.Group>
                     <Button variant="outline-success" type="submit">
