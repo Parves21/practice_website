@@ -12,7 +12,7 @@ function Main() {
     return (
         <div>
             <Header></Header>
-            <Container>
+            <Container  className='px-0 mx-auto'>
                 <Row>
                     <Col  lg="2"><LeftNav></LeftNav></Col>
                     <Col lg="7"><Outlet></Outlet></Col>

@@ -9,11 +9,20 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './Header.css';
 import { Link } from 'react-router-dom';
-import { FaUserGraduate } from "react-icons/fa";
-
+import { FaUser, FaUserGraduate, FaUserMinus, FaSistrix } from "react-icons/fa";
+import { AuthContext } from '../../../Contexts/AuthProvider/AuthProvider';
+import { Image } from 'react-bootstrap';
 
 
 function Header() {
+    const { user, logOut } = React.useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.error(error))
+    }
+
     return (
         <div id='headerOfNav'>
             <Navbar fixed="top" expand="lg" className="bg-body-tertiary py-3">
@@ -30,8 +39,8 @@ function Header() {
                             navbarScroll
                         >
                             <Nav className='HomeSection ms-5'><Link className='text-decoration-none text-dark' to='/'>Home</Link></Nav>
-                            <Nav className='ClassSection'><Link className='text-decoration-none text-dark' to='/class'>Class</Link></Nav>
-                            <Nav className='ClassSection'><Link className='text-decoration-none text-dark' to='/about'>About</Link></Nav>
+                            <Nav className='HomeSection ms-2'><Link className='text-decoration-none text-dark' to='/about'>About</Link></Nav>
+
                             <NavDropdown className='fw-bold' title="Department Course" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="#action1">
                                     All Courses
@@ -46,16 +55,38 @@ function Header() {
                                 <NavDropdown.Item><Link className='text-decoration-none' to='/power'>Power Department</Link></NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
-                        <Form className="d-flex">
-                            <Form.Control
-                                type="search"
-                                placeholder="Search"
-                                className="me-2"
-                                aria-label="Search"
-                            />
-                            <Button variant="outline-primary">Search</Button>
-                        </Form>
-                        <Nav><Link className='text-decoration-none ms-3 fw-bold text-dark' to='/login'><FaUserGraduate /> Login</Link></Nav>
+                        <Nav>
+                            <h4 className='text-warning me-2'><FaSistrix /> Search</h4>
+                        </Nav>
+                        <Nav>
+                            {
+                                user?.uid ?
+                                    <>
+                                        <div className='ms-3'>{user?.displayName}</div>
+                                        <div>
+                                            {user?.photoURL ?
+                                                <Image
+                                                    style={{ height: '30px' }}
+                                                    roundedCircle
+                                                    src={user.photoURL}
+                                                ></Image>
+                                                : <FaUser />
+                                            }
+                                        </div>
+                                        <div onClick={handleLogOut} className='ms-3'>
+                                            <button
+                                                style={{border: 'none'}}
+                                                className='rounded'><FaUserMinus /> SignOut</button>
+                                        </div>
+
+                                    </>
+                                    :
+                                    <>
+                                        <Link className='text-decoration-none ms-3 fw-bold text-dark' to='/login'><FaUserGraduate /> Login</Link>
+                                    </>
+                            }
+                        </Nav>
+                        {/* <Link className='text-decoration-none ms-3 fw-bold text-dark' to='/login'><FaUserGraduate /> Login</Link> */}
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

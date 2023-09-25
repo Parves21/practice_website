@@ -28,7 +28,7 @@ function Login() {
                             <Link className='text-danger' to='/register'><small>SignUp</small></Link>
                         </div>
                     </Form.Group>
-                    <Button variant="outline-success" type="submit">
+                    <Button className='px-5' variant="outline-success" type="submit">
                         Login
                     </Button>
                 </Form>
