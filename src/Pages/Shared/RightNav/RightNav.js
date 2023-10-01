@@ -7,6 +7,7 @@ import { FaFacebook, FaGithub, FaWhatsapp, FaTwitter, FaTwitch, FaGoogle } from 
 import Carousel from 'react-bootstrap/Carousel';
 import Asset1 from '../../../Assets/COP.png';
 import Asset2 from '../../../Assets/logo2.jpg';
+import Asset3 from '../../../Assets/400TkMake.png';
 import { AuthContext } from '../../../Contexts/AuthProvider/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
 
@@ -61,6 +62,13 @@ function RightNav() {
                         <img
                             className="d-block w-100"
                             src={Asset2}
+                            alt="Second slide"
+                        />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img
+                            className="d-block w-100"
+                            src={Asset3}
                             alt="Second slide"
                         />
                     </Carousel.Item>
