@@ -8,6 +8,6 @@ function Computer() {
             <h3>This is Computer Department</h3>
         </div>
     );
-};
+}; 
 
 export default Computer;

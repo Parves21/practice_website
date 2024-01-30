@@ -9,7 +9,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './Header.css';
 import { Link } from 'react-router-dom';
-import { FaUser, FaUserGraduate, FaUserMinus, FaSistrix } from "react-icons/fa";
+import { FaUser, FaUserGraduate, FaUserMinus, FaSistrix, FaBell } from "react-icons/fa";
 import { AuthContext } from '../../../Contexts/AuthProvider/AuthProvider';
 import { Image } from 'react-bootstrap';
 
@@ -38,9 +38,9 @@ function Header() {
                             style={{ maxHeight: '70px', gap: '30px' }}  
                             navbarScroll
                         > 
-                            <Nav className='HomeSection ms-5'><Link className='text-decoration-none text-dark' to='/'>Home</Link></Nav>
-                            <Nav className='HomeSection ms-2'><Link className='text-decoration-none text-dark' to='/about'>About</Link></Nav>
-    
+                            <Nav className='HomeSection ms-5'><Link className='text-decoration-none text-dark fw-bold' to='/'>Home</Link></Nav>
+                            <Nav className='HomeSection ms-2'><Link className='text-decoration-none text-dark fw-bold' to='/about'> <FaBell/> Notice</Link></Nav>
+     
                             <NavDropdown className='fw-bold' title="Department Course" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="#action1">
                                     All Courses 
