@@ -12,16 +12,16 @@ function Main() {
     return (
         <div>
             <Header></Header>
-            <Container  className='px-0 mx-auto'>
-                <Row>
-                    <Col  lg="2"><LeftNav></LeftNav></Col>
-                    <Col lg="7"><Outlet></Outlet></Col>
-                    <Col lg="3"><RightNav></RightNav></Col>
+            <Container  className='px-0 mx-auto'> 
+                <Row>     
+                    <Col  lg="2"><LeftNav></LeftNav></Col> 
+                    <Col lg="8"><Outlet></Outlet></Col>  
+                    <Col lg="2"><RightNav></RightNav></Col>
                 </Row>
             </Container>
-            <Footer></Footer>
+            <Footer></Footer>  
         </div>
     );
-};
+}; 
 
 export default Main;

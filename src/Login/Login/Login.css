@@ -1,6 +1,16 @@
+#LoginBody{
+    background-image: url('../../../public/Login-LogOut-background21.jpg'); 
+    height: 100vh;  
+    background-size: cover;
+    background-position: center;  
+}
+.StyleAdd{
+    text-align: center;
+    color: #3be0ac; 
+} 
 #LoginPage{
     border: 1px solid #3be0ac;
-    border-radius: 5px;
+    border-radius: 15px; 
     padding: 20px;
 }
 

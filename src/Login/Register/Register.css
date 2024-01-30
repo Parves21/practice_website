@@ -1,3 +1,11 @@
+#RegisterBody{
+    background-image: url('../../../public/Login-LogOut-background21.jpg'); 
+    height: 100vh;  
+    background-size: cover;
+    background-position: center;   
+}
+
+
 /* #RegisterPage:hover{
     background-color: black;
     box-shadow: black;

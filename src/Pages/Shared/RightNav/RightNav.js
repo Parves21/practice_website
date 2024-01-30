@@ -7,15 +7,15 @@ import { FaFacebook, FaGithub, FaWhatsapp, FaTwitter, FaTwitch, FaGoogle } from 
 import Carousel from 'react-bootstrap/Carousel';
 import Asset1 from '../../../Assets/COP.png';
 import Asset2 from '../../../Assets/logo2.jpg';
-import Asset3 from '../../../Assets/400TkMake.png';
+import Asset3 from '../../../Assets/WebCertificate.jpg'; 
 import { AuthContext } from '../../../Contexts/AuthProvider/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
-
+ 
 function RightNav() {
     const {providerLogin} = React.useContext(AuthContext);
 
     const googleProvider = new GoogleAuthProvider();
-
+ 
     const handleGoogleSignIn = () =>{
         providerLogin(googleProvider)
         .then(result =>{
@@ -24,11 +24,9 @@ function RightNav() {
         })
         .catch(crror => console.error(crror));
     }
-
-
-
+  
     return (
-        <div className='App'>
+        <div className='App'> 
 
             <div className='mb-3'>
                 <h3>Sign With</h3>

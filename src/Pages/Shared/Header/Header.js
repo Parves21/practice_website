@@ -22,34 +22,34 @@ function Header() {
             .then(() => { })
             .catch(error => console.error(error))
     }
-
+    
     return (
         <div id='headerOfNav'>
             <Navbar fixed="top" expand="lg" className="bg-body-tertiary py-3">
-                <Container fluid>
+                <Container fluid> 
                     <Navbar.Brand className='fw-bold'>
                         <Link className='text-decoration-none text-dark' to='/'>
-                            Cyclone of Programming
+                            Pabna Polytechnic Institute 
                         </Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
                             className="me-auto my-2 my-lg-0 Navber-Container"
-                            style={{ maxHeight: '100px', gap: '30px' }}
+                            style={{ maxHeight: '70px', gap: '30px' }}  
                             navbarScroll
-                        >
+                        > 
                             <Nav className='HomeSection ms-5'><Link className='text-decoration-none text-dark' to='/'>Home</Link></Nav>
                             <Nav className='HomeSection ms-2'><Link className='text-decoration-none text-dark' to='/about'>About</Link></Nav>
-
+    
                             <NavDropdown className='fw-bold' title="Department Course" id="navbarScrollingDropdown">
                                 <NavDropdown.Item href="#action1">
-                                    All Courses
+                                    All Courses 
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item><Link className='text-decoration-none' to='/computer'>Computer Department</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link className='text-decoration-none' to='/computer'>Computer Department</Link></NavDropdown.Item> 
                                 <NavDropdown.Item><Link className='text-decoration-none' to='/civil'>Civil Department</Link></NavDropdown.Item>
                                 <NavDropdown.Item><Link className='text-decoration-none' to='/electronice'>Electronice Department</Link></NavDropdown.Item>
-                                <NavDropdown.Item><Link className='text-decoration-none' to='/electrical'>Electrical Department</Link></NavDropdown.Item>
+                                <NavDropdown.Item><Link className='text-decoration-none' to='/electrical'>Electrical Department</Link></NavDropdown.Item> 
                                 <NavDropdown.Item><Link className='text-decoration-none' to='/macanical'>Macanical Department</Link></NavDropdown.Item>
                                 <NavDropdown.Item><Link className='text-decoration-none' to='/rac'>Rac Department</Link></NavDropdown.Item>
                                 <NavDropdown.Item><Link className='text-decoration-none' to='/power'>Power Department</Link></NavDropdown.Item>
