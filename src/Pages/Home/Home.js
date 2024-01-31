@@ -12,8 +12,8 @@ function Home() {
 
                 Elit ipsum tempor tempor eu cillum do. Exercitation dolor et consectetur exercitation ipsum eiusmod. Minim elit minim sit nisi dolor veniam quis.
             </p>
-            <div>
-            <img src={logo} alt="Logo" />;
+            <div> 
+            <img src={logo} alt="Logo" />
             </div>
             <br/>
             <p>Aliqua Lorem velit ullamco esse ut occaecat sunt laboris aliquip nisi sint et mollit magna. Sit sunt occaecat voluptate Lorem anim do voluptate veniam dolore eiusmod est sint aliqua. Amet non consectetur magna nisi aute culpa pariatur quis anim ut. Labore in cillum dolor non ipsum. Officia laboris eiusmod esse deserunt quis nulla non quis duis culpa commodo. Quis est aute do minim sit velit qui reprehenderit Lorem. Non anim elit sint ex.

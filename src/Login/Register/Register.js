@@ -25,7 +25,7 @@ function Register() {
                         </Form.Text>
                     </Form.Group>
                     <Form.Group className="mb-1text-light fw-bold " controlId="formBasicPassword">
-                        <Form.Label><FaLock /> Password</Form.Label>
+                        <Form.Label className='text-light fw-bold'><FaLock /> Password</Form.Label> 
                         <Form.Control type="password" placeholder="Password" required />
                         <div className='d-flex justify-content-around'>
                             <p className='text-light fw-normal'>Already have an Account !!</p> 

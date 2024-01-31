@@ -1,5 +1,12 @@
 #FooterBody{
     background-image: url('../../../../public/PPI-theme.png'); 
     height: 100%;  
+    width: 100%;
     margin-top: 30px;
+    margin-left: 0;
+    margin-right: 0; 
+    margin-bottom: 0;  
+
 }
+
+

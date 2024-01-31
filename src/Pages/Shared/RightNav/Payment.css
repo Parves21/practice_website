@@ -1,6 +1,6 @@
-#CivilADD{
+#PaymentAdd{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
     height: 100%;
 }

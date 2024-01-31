@@ -7,8 +7,8 @@ function Footer() {
     return (
         <div id='FooterBody' className='App'>
 
-            <pre style={{padding: '35px'}}> 
-                &copy;CopyRight 2023 by the developer.
+            <pre style={{padding: '35px'}}>  
+                &copy;CopyRight 2024 by Nur Islam.!  
             </pre>   
 
         </div>

@@ -15,6 +15,9 @@ import Power from "../Department/Power/Power";
 import Rac from "../Department/Rac/Rac";
 import Environment from "../Department/Environment/Environment";
 import About from "../About/About";
+import Payment from "../Pages/Shared/RightNav/Payment";
+import Stipend from "../Pages/Shared/RightNav/Stipend";
+import Result from "../Pages/Shared/RightNav/Result";
 
 export const Routes = createBrowserRouter([
     {
@@ -24,6 +27,18 @@ export const Routes = createBrowserRouter([
             {
                 path: '/header',
                 element: <Header></Header>
+            },
+            {
+                path: '/result',
+                element: <Result></Result>
+            }, 
+            {
+                path: '/payment',
+                element: <Payment></Payment> 
+            },
+            {
+                path: '/stipend',
+                element: <Stipend></Stipend> 
             },
             {
                 path: '/footer',

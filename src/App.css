@@ -3,7 +3,7 @@
 }
 
 #AppBody {
-  background-image: url('../public/PPI-background.gif');
+  /* background-image: url('../public/PPI-background.gif'); */
   height: 100vh;
   background-size: cover;
   background-position: center;
