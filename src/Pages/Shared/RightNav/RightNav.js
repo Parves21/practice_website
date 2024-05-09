@@ -55,25 +55,13 @@ function RightNav() {
             <div>
                 <Carousel data-bs-theme="dark">
                     <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={Asset1}
-                            alt="First slide"
-                        />
+                        <img className="d-block w-100" src={Asset1} alt="First slide"/>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={Asset2}
-                            alt="Second slide"
-                        />
+                        <img className="d-block w-100" src={Asset2} alt="Second slide"/>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img
-                            className="d-block w-100"
-                            src={Asset3}
-                            alt="Second slide"
-                        />
+                        <img className="d-block w-100" src={Asset3} alt="Third slide"/>
                     </Carousel.Item>
                 </Carousel>
             </div> 

@@ -15,12 +15,11 @@ function LeftNav() {
     } ,[])
  
     return (
-        <div id='LeftNav'>  
-            <h5 className='fw-bold'>Department</h5>    
+        <div id='LeftNav'>   
             <div>
                 {
                     ApiDatas.map(ApiData =>  
-                    <p>
+                    <p id='hoverAdd'>
                         <Link className={ApiData.class} to={ApiData.url}>
                             {ApiData.name} 
                         </Link> 
