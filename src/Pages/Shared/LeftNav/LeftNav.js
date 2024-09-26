@@ -13,7 +13,7 @@ function LeftNav() {
         .then(res => res.json())
         .then(data => setApiDatas(data))
     } ,[])
- 
+
     return (
         <div id='LeftNav'>   
             <div>

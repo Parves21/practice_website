@@ -39,23 +39,7 @@ function Header() {
                             <Nav className='HomeSection ms-5'><Link className='text-decoration-none text-dark fw-bold' to='/'>Home</Link></Nav>
                             <Nav className='HomeSection ms-2'><Link className='text-decoration-none text-dark fw-bold' to='/about'> <FaBell/> Notice</Link></Nav>    
      
-                            <NavDropdown className='fw-bold' title="Department Course" id="navbarScrollingDropdown">
-                                <NavDropdown.Item href="#action1">
-                                    All Courses 
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item><Link className='text-decoration-none' to='/computer'>Computer Department</Link></NavDropdown.Item> 
-                                <NavDropdown.Item><Link className='text-decoration-none' to='/civil'>Civil Department</Link></NavDropdown.Item>
-                                <NavDropdown.Item><Link className='text-decoration-none' to='/electronice'>Electronice Department</Link></NavDropdown.Item>
-                                <NavDropdown.Item><Link className='text-decoration-none' to='/electrical'>Electrical Department</Link></NavDropdown.Item> 
-                                <NavDropdown.Item><Link className='text-decoration-none' to='/macanical'>Macanical Department</Link></NavDropdown.Item>
-                                <NavDropdown.Item><Link className='text-decoration-none' to='/rac'>Rac Department</Link></NavDropdown.Item>
-                                <NavDropdown.Item><Link className='text-decoration-none' to='/power'>Power Department</Link></NavDropdown.Item>
-                            </NavDropdown>
                             <Nav className='HomeSection ms-1'><Link  className='text-decoration-none text-dark fw-bold' to='/result'><FaCalculator/> Result</Link></Nav>   
-                        </Nav>
-                        <Nav>
-                            <h4 className='text-warning me-2'><FaSistrix /> Search</h4>
                         </Nav>
                         <Nav>
                             {

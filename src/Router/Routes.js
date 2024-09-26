@@ -17,7 +17,14 @@ import Environment from "../Department/Environment/Environment";
 import About from "../About/About";
 import Payment from "../Pages/Shared/RightNav/Payment";
 import Stipend from "../Pages/Shared/RightNav/Stipend";
-import Result from "../Pages/Shared/RightNav/Result";
+import Result from "../Pages/Shared/Header/Result";
+import FirstSemester from "../Department/Computer/FirstSemester";
+import SecondSemester from "../Department/Computer/SecondSemester";
+import ThirdSemester from "../Department/Computer/ThirdSemester";
+import FourthSemester from "../Department/Computer/FourthSemester";
+import FifthSemester from "../Department/Computer/FifthSemester";
+import SixthSemester from "../Department/Computer/SixthSemester";
+import SeventhSemester from "../Department/Computer/SeventhSemester";
 
 export const Routes = createBrowserRouter([
     {
@@ -69,6 +76,34 @@ export const Routes = createBrowserRouter([
                 element: <Computer></Computer>
             },
             {
+                path: '/1stSemester',
+                element: <FirstSemester></FirstSemester>
+            },
+            {
+                path: '/2ndSemester',
+                element: <SecondSemester></SecondSemester>
+            },
+            {
+                path: '/3rdSemester',
+                element: <ThirdSemester></ThirdSemester>
+            },
+            {
+                path: '/4thSemester',
+                element: <FourthSemester></FourthSemester>
+            },
+            {
+                path: '/5thSemester',
+                element: <FifthSemester></FifthSemester>
+            },
+            {
+                path: '/6thSemester',
+                element: <SixthSemester></SixthSemester>
+            },
+            {
+                path: '/7thSemester',
+                element: <SeventhSemester></SeventhSemester>
+            },
+            {
                 path: '/civil',
                 element: <Civil></Civil>
             },
@@ -99,3 +134,4 @@ export const Routes = createBrowserRouter([
         ]
     }
 ])
+
